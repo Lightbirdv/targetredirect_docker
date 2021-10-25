@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>target360</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div id="message">
+		<img src="./targetlogo.png" alt="targetlogo" id="logo">
+		<div id="text-message">
+			<p id="inline">We have moved! <br> This website will automatically be redirected after <div id="counter">60</div> seconds. You can manually go to the new website by clicking the link <a href="https://target360-dv-develop.pinky.int.bayer.com">target360-dv-develop.pinky.int.bayer.com</a></p>
+			<script>
+				setInterval(function() {
+					var div = document.querySelector("#counter");
+					var count = div.textContent * 1 - 1;
+					div.textContent = count;
+					if (count <= 0) {
+						window.location.replace("https://target360-dv-develop.pinky.int.bayer.com");
+					}
+				}, 1000);
+			</script>
+		</div>
+	</div>
+</body>
+</html>

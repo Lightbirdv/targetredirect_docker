@@ -1,0 +1,21 @@
+#message {
+    margin: auto;
+    margin-top: 20vw;
+    width: 40%;
+    height: 600px; 
+    font-size: larger;
+}
+
+#logo {
+    width: 120px;
+    height: 120px;
+}
+
+#text-message {
+    margin-top: -90px;
+    margin-left: 150px;
+}
+
+#inline, #counter {
+    display: inline;
+}
